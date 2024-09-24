@@ -8,7 +8,7 @@ import Header from './header';
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="bg-background-100">
       <Header />
       <main className="min-h-screen">
         <Outlet />

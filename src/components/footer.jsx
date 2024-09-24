@@ -3,9 +3,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="h-60 justify-around bg-slate-900 text-white font-bold flex flex-row ">
-      <div>Logo</div>
-      <div>Socials</div>
+    <footer className="bg-background-0 text-text-100 p-10 flex justify-center">
+      <h5 className="text-center text-7xl">Let's Connect</h5>
     </footer>
   );
 };
