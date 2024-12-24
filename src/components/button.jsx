@@ -1,5 +1,5 @@
 // React
-import React from 'react';
+import React from "react";
 
 const Button = ({ callback, children }) => {
   return (

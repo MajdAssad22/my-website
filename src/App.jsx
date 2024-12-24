@@ -1,17 +1,17 @@
 // React
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
 // Pages
-import HomePage from './pages/home-page';
-import AboutPage from './pages/about-page';
-import ContactPage from './pages/contact-page';
-import ProjectsPage from './pages/projects-page';
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 // Components
-import MainLayout from './components/main-layout';
+import MainLayout from "./components/MainLayout";
 
 // Style & CSS
-import './App.css';
+import "./App.css";
 
 function App() {
   return (

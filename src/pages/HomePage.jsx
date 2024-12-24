@@ -1,14 +1,34 @@
 // React
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 // Components
-import Button from '../components/button';
+import Button from "../components/Button";
+import TypeingTextEffect from "../components/TypingTextEffect/TypingTextEffect";
 
 // Style & CSS
-import { useSpring, animated } from '@react-spring/web';
-import { CgScrollV } from 'react-icons/cg';
+import { useSpring, animated } from "@react-spring/web";
+import { CgScrollV } from "react-icons/cg";
 
 const HomePage = () => {
+  const subtitles = [
+    "Software Engineer",
+    "Web Desinger",
+    "Game Developer",
+    "Photographer",
+  ];
+
+  const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSubtitleIndex(
+        (prevIndex) => (prevIndex + 1) % subtitles.length
+      );
+    }, 3000); // Change subtitle every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on component unmount
+  }, [subtitles.length]);
+
   return (
     <div className="text-text-0">
       {/* Hero Section */}
@@ -22,7 +42,13 @@ const HomePage = () => {
               I'm Majd
             </h1>
             <h2 className="text-3xl pt-5 font-sansation font-bold text-text-100">
-              A <span>Software Engineer</span>
+              I'm a{" "}
+              <span className="text-blue-400">
+                <TypeingTextEffect
+                  text={subtitles[currentSubtitleIndex]}
+                  typingSpeed={60}
+                ></TypeingTextEffect>
+              </span>
             </h2>
           </div>
           {/* Image */}
