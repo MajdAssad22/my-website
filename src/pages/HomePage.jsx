@@ -16,7 +16,6 @@ const HomePage = () => {
     "Game Developer",
     "Photographer",
   ];
-
   const [currentSubtitleIndex, setCurrentSubtitleIndex] = useState(0);
 
   useEffect(() => {
