@@ -19,7 +19,7 @@ export default {
           100: '#8E8E8E',
         },
         primary: {
-          0: '#E6E6E6',
+          0: '#60a5fa',
         },
         Secondary: {
           0: '#8E8E8E',
