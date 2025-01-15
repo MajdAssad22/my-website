@@ -6,7 +6,6 @@ import Button from "../components/Button";
 import TypeingTextEffect from "../components/TypingTextEffect/TypingTextEffect";
 
 // Style & CSS
-import { useSpring, animated } from "@react-spring/web";
 import { CgScrollV } from "react-icons/cg";
 
 const HomePage = () => {
@@ -42,7 +41,7 @@ const HomePage = () => {
             </h1>
             <h2 className="text-3xl pt-5 font-sansation font-bold text-text-100">
               I'm a{" "}
-              <span className="text-blue-400">
+              <span className="text-primary-0">
                 <TypeingTextEffect
                   text={subtitles[currentSubtitleIndex]}
                   typingSpeed={60}
@@ -54,21 +53,25 @@ const HomePage = () => {
           <div className="w-52 h-52 bg-blue-50"></div>
         </div>
         <CgScrollV
-          className="text-text-100 absolute bottom-10 left-1/2"
+          className="text-text-100 absolute bottom-10 left-1/2 animate-bounce"
           size={35}
         />
       </div>
       {/* About & work Section */}
-      <div className="min-h-screen bg-background-200 pt-24 px-16">
-        <h3 className="text-3xl font-sansation font-light text-text-100">
-          About
-        </h3>
-        <p className=""></p>
-        <h3 className="text-3xl font-sansation font-light text-text-100">
-          Recent Work
-        </h3>
-        <ul></ul>
-        <Button>test</Button>
+      <div className="min-h-screen bg-background-200 flex flex-col pt-24 px-16">
+        <div>
+          <h3 className="text-4xl font-sansation font-light text-text-100">
+            About
+          </h3>
+          <p className="">Hey my name is</p>
+        </div>
+        <div>
+          <h3 className="text-4xl font-sansation font-light text-text-100">
+            Recent Work
+          </h3>
+          <ul></ul>
+          <Button>test</Button>
+        </div>
       </div>
     </div>
   );
