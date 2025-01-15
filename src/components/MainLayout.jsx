@@ -3,8 +3,8 @@ import React, { useLayoutEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
 // Components
-import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./header";
+import Footer from "./footer";
 
 const MainLayout = () => {
   const location = useLocation();
