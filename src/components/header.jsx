@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Style & CSS
-import Logo from "./Logo";
 import Menu from "./Menu/Menu";
+import Logo from "./logo";
 
 const Header = () => {
   return (

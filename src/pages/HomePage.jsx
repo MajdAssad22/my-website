@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 // Components
-import Button from "../components/Button";
+import Button from "../components/button";
 import TypeingTextEffect from "../components/TypingTextEffect/TypingTextEffect";
 
 // Style & CSS
