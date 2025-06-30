@@ -1,4 +1,9 @@
-# Majd Assad's Website
+# Majd Assad's Website (Archived)
+
+### This repository is archived and no longer maintained, the updated and maintained repo is 
+https://github.com/MajdAssad22/majd-assad-website
+
+<br/>
 
 A modern, responsive portfolio website designed to showcase my projects, skills, and experience. The website is optimized for fast performance, creativity and accessibility, offering a smooth user experience across all devices. It includes sections for featured projects, an About and contact page.
 
